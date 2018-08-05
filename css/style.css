@@ -36,15 +36,12 @@ h1 {
   margin-bottom: 30px;
 }
 
-h2 {
-  color: #ffffff;
+h3 {
+  color: #2a9426;
   font-family: "Source Sans Pro", Arial, sans-serif;
   margin: 5 0 30px 0;
   margin-bottom: 30px;
-  font-size: 22px;
-}
-h3 {
-	color: #2a9426
+  font-size: 20px;
 }
 
 .main-content {

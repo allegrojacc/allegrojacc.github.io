@@ -233,6 +233,9 @@ input, select, textarea {
 		opacity: 1;
 		position: fixed;
 		top: 0;
+		max-height:1080px
+		max-width:1920px
+			
 	}
 
 	@-moz-keyframes bg {

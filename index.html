@@ -5,67 +5,80 @@
 	html5up.net | @ajlkn
 -->
 <html>
-	<head>
-		<title>ALLEGROJACC</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
+
+<head>
+	<title>ALLEGROJACC</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<a href="\stulej/stulej.html" target="_top"></a>
+	<style>
+		img.bg {
+			/* Set rules to fill background */
+			min-height: 100%;
+			min-width: 1024px;
+
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+
+			/* Set up positioning */
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		@media screen and (max-width: 1024px) {
+
+			/* Specific to this particular image */
 			img.bg {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+				left: 50%;
+				margin-left: -512px;
+				/* 50% */
+			}
+		}
+	</style>
+</head>
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
-</style>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>allegrojacc</h1>
-						<p>Games &nbsp;&bull;&nbsp; TV Series &nbsp;&bull;&nbsp; Frog</p>
-						<nav>
-							<ul>
-								<li><a href="https://twitter.com/allegrojaccc" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://psnprofiles.com/allegrojacc" class="icon brands fa-playstation"><span class="label">PlayStation</span></a></li>
-								<li><a href="https://www.tvtime.com/en/user/15566636/profile" class="icon solid fa-film"><span class="label">TVTime</span></a></li>
-								<li><a href="https://buycoffee.to/allegrojacc" class="icon solid fa-mug-hot"><span class="label">Donate</span></a></li>
-							</ul>
-						</nav>
-					</header>
+			<!-- Header -->
+			<header id="header">
+				<h1>allegrojacc</h1>
+				<p>Games &nbsp;&bull;&nbsp; TV Series &nbsp;&bull;&nbsp; Frog</p>
+				<nav>
+					<ul>
+						<li><a href="https://twitter.com/allegrojaccc" class="icon brands fa-twitter"><span
+									class="label">Twitter</span></a></li>
+						<li><a href="https://psnprofiles.com/allegrojacc" class="icon brands fa-playstation"><span
+									class="label">PlayStation</span></a></li>
+						<li><a href="https://www.tvtime.com/en/user/15566636/profile" class="icon solid fa-film"><span
+									class="label">TVTime</span></a></li>
+						<li><a href="https://buycoffee.to/allegrojacc" class="icon solid fa-mug-hot"><span
+									class="label">Donate</span></a></li>
+					</ul>
+				</nav>
+			</header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; ALLEGROJACC.</a></span>
-					</footer>
+			<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright">&copy; ALLEGROJACC.</a></span>
+			</footer>
 
-			</div>
 		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+	</div>
+	<script>
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+	</script>
+</body>
+
 </html>

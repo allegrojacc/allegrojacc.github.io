@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work in progress</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: black;
+            color: #00ff00;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #terminal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: scroll;
+        }
+
+        #text {
+            white-space: pre-wrap;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="terminal">
+        <p id="text"></p>
+    </div>
+    <script>
+        const text = `
+
+        ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗    ████████╗██╗   ██╗██████╗  █████╗ ██╗     ██╗     ██╗███╗   ██╗ ██████╗ 
+        ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝    ╚══██╔══╝██║   ██║██╔══██╗██╔══██╗██║     ██║     ██║████╗  ██║██╔════╝ 
+        ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║          ██║   ██║   ██║██████╔╝███████║██║     ██║     ██║██╔██╗ ██║██║  ███╗
+        ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║          ██║   ██║   ██║██╔══██╗██╔══██║██║     ██║     ██║██║╚██╗██║██║   ██║
+        ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║          ██║   ╚██████╔╝██║  ██║██║  ██║███████╗███████╗██║██║ ╚████║╚██████╔╝
+        ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝          ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                                                                                                                                 
+
+
+      Gra jest w trakcie produkcji!
+
+
+      Coming when it's ready!
+    `;
+
+        const terminal = document.getElementById("text");
+        let i = 0;
+
+        const interval = setInterval(() => {
+            terminal.textContent += text[i];
+            i++;
+
+            if (i === text.length) {
+                clearInterval(interval);
+            }
+        }, 5);
+    </script>
+</body>
+
+</html>

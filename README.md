@@ -1,9 +1,9 @@
 # PIWO TO MOJE PALIWO 👨‍💻
 
 </h1>
-## 2023 ALLEGROJACC.DAT PROJECT
+## 2024 ALLEGROJACC.DAT PROJECT
 
 ## Thanks for
-
-[**giovannamoeller**](https://github.com/giovannamoeller) for the idea and code base
-[**luizeduardomr**](https://github.com/luizeduardomr/) for site project
+[**rimijoker**](https://github.com/rimijoker) for main site project
+[**giovannamoeller**](https://github.com/giovannamoeller) for socials project
+[**luizeduardomr**](https://github.com/luizeduardomr/) for socials project

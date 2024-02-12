@@ -27,16 +27,30 @@
             padding: 20px;
             box-sizing: border-box;
             overflow: scroll;
+            text-align: center;
         }
 
         #text {
             white-space: pre-wrap;
             font-size: 18px;
         }
+
+        #warning-sign {
+            background-color: #8f4704; /* Orange background */
+            color: rgb(255, 255, 255);  
+            padding: 10px;
+            margin-bottom: 20px; /* Space below the sign */
+            text-align: center;
+            border: 1px solid black;
+            display: none;
+        }
     </style>
 </head>
 
 <body>
+    <div id="warning-sign">
+        **WARNING** Min. width to display terminal ASCII art properly: 1833, resize your browser or change device to see ASCII art properly. When the width is good, the warning will disappear.
+    </div>
     <div id="terminal">
         <p id="text"></p>
     </div>
@@ -52,7 +66,7 @@
                                                                                                                                  
 
 
-      Gra jest w trakcie produkcji!
+      Game is in development at Pixelated Browar Games!
 
 
       Coming when it's ready!
@@ -69,6 +83,20 @@
                 clearInterval(interval);
             }
         }, 5);
+        // Check for screen width on page load
+        checkScreenWidth();
+
+        // Check for screen width on window resize
+        window.addEventListener('resize', checkScreenWidth); 
+
+        function checkScreenWidth() {
+            const MIN_WIDTH = 1833;
+            if (window.innerWidth < MIN_WIDTH) { 
+                document.getElementById('warning-sign').style.display = 'block'; // Show warning
+            } else {
+                document.getElementById('warning-sign').style.display = 'none'; // Hide warning
+            }
+        }       
     </script>
 </body>
 

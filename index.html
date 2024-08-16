@@ -1,27 +1,40 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
+    <title>allegrojacc os v1.0</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/index.css"
+    />
+    <link rel="icon" type="image/png" href="assets/images/a.png">
+    <script defer src="assets/js/commands.js"></script>
+    <script defer src="assets/js/inputRenderer.js"></script>
+    <script defer type="module" src="assets/js/commandParser.js"></script>
+    
+  </head>
 
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3NF8LBM5X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-V3NF8LBM5X');
-</script>
-  <title>C:\Users\allegrojacc</title>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <link rel="icon" href="/assets/images/terminal_icon.png">
-  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <body>
+    <div id="terminal">
+      <a id="contentHook"></a>
+    </div>
+    <div id="command" onclick="focusOnTextArea()">
+      <textarea
+        type="text"
+        id="texter"
+        onkeydown="moveCursor(this.value.length, event)"
+        autofocus
+      ></textarea>
+      <div id="liner">
+        <span id="typer"></span><b class="cursor" id="cursor">█</b>
+        <span id="mobileInput"><input type="text" autocapitalize="none" autocorrect="off" spellcheck="false" autocomplete="off" inputmode="text" ></span>
+      </div>
+    </div>
 
-<body>
-  <script type="text/javascript" src="assets/js/index.js">
-  </script>
-  <div id="console"></div>
-  </script>
-</body>
-
+  </body>
 </html>

@@ -7,12 +7,12 @@
   } */
 
   :root {
-    --background: #262a33;
-    --primaryTextColor: #e5e5e5;
+    --background: #1e1e2e;
+    --primaryTextColor: #6767a0;
     --secundaryTextColor: #e5e512;
-    --highlightTextColor: #0fa8cd;
+    --highlightTextColor: #cdd6f4;
     --white: #fff;
-    --baseDirectory: "guest@ealpizarp.com:~$";
+    --baseDirectory: "user@allegrojacc.online:~$";
   }
 
 * {

@@ -5,8 +5,4 @@
 
 
 ## Thanks to
-[**rimijoker**](https://github.com/rimijoker) for main site project 
-
-[**giovannamoeller**](https://github.com/giovannamoeller) for socials project
-
-[**luizeduardomr**](https://github.com/luizeduardomr/) for socials project
+[**ealpizarp**](https://github.com/ealpizarp/portafolio-website)

@@ -8,9 +8,9 @@
 
   :root {
     --background: #1e1e2e;
-    --primaryTextColor: #6767a0;
-    --secundaryTextColor: #e5e512;
-    --highlightTextColor: #cdd6f4;
+    --primaryTextColor: #8caaee;
+    --secundaryTextColor: #eed49f;
+    --highlightTextColor: #bcc5e1;
     --white: #fff;
     --baseDirectory: "user@allegrojacc.online:~$";
   }
